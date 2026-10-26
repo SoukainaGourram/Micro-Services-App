@@ -13,3 +13,10 @@ spring:
               uri: lb://INVENTORY-SERVICE
               predicates:
                 - Path=/products/**
+
+            - id: bills
+              uri: lb://BILLING-SERVICE
+              predicates:
+                - Path=/BILLING-SERVICE/**
+              filters:
+                - StripPrefix=1

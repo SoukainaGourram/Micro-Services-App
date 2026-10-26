@@ -1,0 +1,60 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run discovery service",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/c",
+				"cd /d C:\\Users\\hp\\eco-sg-app\\discovery-service && mvnw.cmd spring-boot:run"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run customer service",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/c",
+				"cd /d C:\\Users\\hp\\eco-sg-app\\customer-service && mvnw.cmd spring-boot:run"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run billing service",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/c",
+				"cd /d C:\\Users\\hp\\eco-sg-app\\billing-service && mvnw.cmd spring-boot:run"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run inventory service",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/c",
+				"cd /d C:\\Users\\hp\\eco-sg-app\\inventory-service && mvnw.cmd spring-boot:run"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run gateway service",
+			"type": "shell",
+			"command": "cmd.exe",
+			"args": [
+				"/c",
+				"cd /d C:\\Users\\hp\\eco-sg-app\\gateway-service && mvnw.cmd spring-boot:run"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
